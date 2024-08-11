@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --Dark-background-color: #1F2937;
+    --Main-text: #f9fAf8;
+    --Secondary-Text: #E5E7EB;
+    --Secondary-color: #fffff;
+    --Quote-Text: #1F2937;
+    --Button-Color: #3882F6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Roboto";
+    background-color: var(--Secondary-color);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+header {
+    background-color: var(--Dark-background-color);
+    color: var(--Main-text);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5px 100px;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: inherit;
+}
+
+nav > ul > li {
+
+}
+
+button {
+    border-radius: 7px;
+    background: var(--Button-Color, #3882F6);
+    color: var(--Main-text);
+    border: 0;
+    font-size: inherit;
+    font-weight: inherit;
+    width: 130px;
+    height: 37px;
+    flex-shrink: 0;
+}
+
+main {
+
+}
+
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--Dark-background-color);
+    gap: 50px;
+    justify-content: center;
+    padding: 100px;
+}
+
+.hero-text {
+    min-width: 10vh;
+    max-width: 50%;
+}
+
+.hero-text > h2 {
+    color: var(--Main-text);
+    font-size: 48px;
+    font-weight: 800;
+}
+
+.hero-text > p {
+    color: var(--Secondary-Text);
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 15px
+}
+
+.hero-img {
+    flex-grow: 1;
+    background-image: url("./images/yoga-main.jpg");
+    background-position: 0% 73%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 50%;
+    min-width: 200px;
+    aspect-ratio: 2/1;
+}
+
+img {
+    
+    max-width: 10%;
+    height: auto;
+}
