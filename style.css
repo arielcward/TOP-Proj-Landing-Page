@@ -4,8 +4,9 @@
     --Dark-background-color: #1F2937;
     --Main-text: #f9fAf8;
     --Secondary-Text: #E5E7EB;
-    --Secondary-color: #fffff;
+    --Secondary-color: #FFFFFF;
     --Quote-Text: #1F2937;
+    --Quote-Background: #E5E7EB;
     --Button-Color: #3882F6;
 }
 
@@ -20,7 +21,7 @@ body {
     background-color: var(--Secondary-color);
     display: flex;
     flex-direction: column;
-    flex: 1;
+    min-height: 100vh;
 }
 
 header {
@@ -44,10 +45,6 @@ nav > ul > li > a {
     color: inherit;
 }
 
-nav > ul > li {
-
-}
-
 button {
     border-radius: 7px;
     background: var(--Button-Color, #3882F6);
@@ -61,7 +58,9 @@ button {
 }
 
 main {
-
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
 }
 
 .hero {
@@ -102,8 +101,132 @@ main {
     aspect-ratio: 2/1;
 }
 
-img {
-    
-    max-width: 10%;
-    height: auto;
+.info {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 100px;
+    align-items: center;
+}
+
+.info-block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+}
+
+.info > h2 {
+    color: #000;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 800;
+    padding: 50px;
+}
+
+.info-block > p {
+    max-width: 168px;
+    text-align: center;
+}
+
+.info-content {
+    display: flex;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-bottom: 125px;
+}
+
+.info-img {
+    width: 168px;
+    height: 168px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    border: 4px solid var(--Button-Color, #3882F6);
+}
+
+#info-img-1 {
+    background-image: url(./images/yoga-women.png);
+    background-position: -190px -90px;
+    background-size: 600px 600px;
+    background-repeat: no-repeat;
+    background-color: grey;
+}
+
+#info-img-2 {
+    background-image: url(./images/yoga-women.png);
+    background-position: -355px -290px;
+    background-size: 600px 600px;
+    background-repeat: no-repeat;
+    background-color: grey;
+}
+
+#info-img-3 {
+    background-image: url(./images/yoga-women.png);
+    background-position: -190px -240px;
+    background-size: 600px 600px;
+    background-repeat: no-repeat;
+    background-color: grey;
+}
+
+#info-img-4 {
+    background-image: url(./images/yoga-women.png);
+    background-position: -355px -150px;
+    background-size: 600px 600px;
+    background-repeat: no-repeat;
+    background-color: grey;
+}
+
+.quote {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--Quote-Background);
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    margin: auto;
+    padding: 100px;
+}
+
+.quote > quoteblock {
+    text-wrap: pretty;
+}
+
+.quote > p {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    text-align: end;
+}
+
+.action {
+    flex-grow: 1;
+    display: flex;
+}
+
+.action-background {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: var(--Button-Color);
+    color: var(--Secondary-Text);
+    border-radius: 8px;
+    gap: 10px;
+    margin: auto;
+    max-width: 50vh;
+}
+
+.action-background > button {
+    border: 2px solid var(--Main-text);
+}
+
+footer {
+    background-color: var(--Dark-background-color);
+    padding: 40px;
+    color:var(--Secondary-color);
+    font-size: 18px;
+    text-align: center;
 }
